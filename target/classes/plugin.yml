@@ -1,0 +1,9 @@
+name: TieredHandouts
+main: uk.jadestudios.tieredhandouts.tieredhandouts
+version: 1.0 SNAPSHOT
+api-version: 1.14
+depend: [Vault]
+commands:
+  run:
+    description: Runs the thing
+    usage: /run
