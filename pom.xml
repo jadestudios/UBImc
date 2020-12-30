@@ -68,11 +68,11 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>net.milkbow.vault</groupId>
+            <groupId>net.milkbowl.vault</groupId>
             <artifactId>Vault</artifactId>
             <version>1.7.3</version>
             <scope>system</scope>
-            <systemPath>C:\Users\Ice Cream\Desktop\20200924-163500-63b7a3aaef8f4c3c840744e492b8526b\plugins\Vault-1.7.3.jar</systemPath>
+            <systemPath>${project.basedir}/Vault.jar</systemPath>
         </dependency>
     </dependencies>
 
