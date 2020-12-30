@@ -2,6 +2,7 @@ package uk.jadestudios.tieredhandouts;
 
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
+import org.bukkit.GameMode;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -28,6 +29,13 @@ public final class tieredhandouts extends JavaPlugin {
         //TODO
     }
 
+    //UBI in a sense
+    //Where people above a threshold gets x
+    //Where people below gets x
+    // and so on
+    //Should check player world so correct account or gamemode
+    //Needs timed event
+
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         Player player = (Player) sender;
@@ -39,12 +47,15 @@ public final class tieredhandouts extends JavaPlugin {
                 case "run":
                     Collection<? extends Player> players = this.getServer().getOnlinePlayers();
                     for (Player s : players) {
-                        if (economy.getBalance(s) < this.getConfig().getDouble("middle")) {
-                            economy.depositPlayer(s, this.getConfig().getDouble("middleCost"));
-                            
-                        } else {
-                            economy.depositPlayer(s, this.getConfig().getDouble("upperCost"));
-                        };
+                        if (s.getGameMode().equals(GameMode.SURVIVAL)){
+                            if (economy.getBalance(s) < this.getConfig().getDouble("middle")) {
+                                economy.depositPlayer(s, this.getConfig().getDouble("middleCost"));
+
+                            } else {
+                                economy.depositPlayer(s, this.getConfig().getDouble("upperCost"));
+                            }
+
+                    }
 
                     }
                     player.sendMessage("Done");
