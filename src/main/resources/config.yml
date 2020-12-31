@@ -11,6 +11,7 @@ UBIthreshold:
   - 1000
 
 #UBI amounts for each threshold
+#UBI should be one bigger than UBIthreshold
 UBI:
   - 1000
   - 2000
@@ -20,3 +21,5 @@ UBI:
 #Time in minutes
 time: 2
 
+#Verbose - not much logging anyways
+verbose: false

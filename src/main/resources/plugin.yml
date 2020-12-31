@@ -1,9 +1,9 @@
-name: TieredHandouts
-main: uk.jadestudios.tieredhandouts.tieredhandouts
-version: 1.0 SNAPSHOT
+name: UBImc
+main: uk.jadestudios.UBImc.UBImc
+version: 1.0
 api-version: 1.14
 depend: [Vault]
 commands:
-  run:
-    description: Runs the thing
-    usage: /run
+  runubi:
+    description: Starts and Runs the UBI process
+    usage: /runubi
