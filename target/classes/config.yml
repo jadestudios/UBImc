@@ -1,10 +1,23 @@
+#World names for this plugin in run in
 worlds:
-  survival,survival_nether
+  - survival
+  - survival_nether
+  - world
 
+#UBI thresholds ranging from largest to smallest
 UBIthreshold:
-  2000000,100000,1000
+  - 2000000
+  - 100000
+  - 1000
 
+#UBI amounts for each threshold
 UBI:
-  1000,2000,3000,4000
+  - 1000
+  - 2000
+  - 3000
+  - 4000
 
+#Time in minutes
+time:
+  - 2
 

@@ -1,0 +1,7 @@
+
+*.lst
+*.lst
+target/maven-archiver/pom.properties
+target/original-tieredhandouts-1.0-SNAPSHOT.jar
+target/tieredhandouts-1.0-SNAPSHOT.jar
+.idea/workspace.xml
