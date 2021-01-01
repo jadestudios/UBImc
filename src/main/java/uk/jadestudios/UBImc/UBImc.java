@@ -120,6 +120,7 @@ public final class UBImc extends JavaPlugin implements Listener {
                     }
                 }
                 this.consoleSendMessage("[UBImc] UBI claimed by " + s.getName() + " for " + UBIvalue, verbose);
+                s.sendMessage("[UBImc] You have received $" + UBIvalue);
             }
             this.consoleSendMessage("[UBImc] UBI completed for " + s.getName(), verbose);
         }
