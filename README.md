@@ -26,6 +26,9 @@ Interpretation: Above 200k gets 1k, between 200k and 100k gets 2k, between 100k 
 # Plugin Support
  I am currently unsure, but if there is something critical, I might put some time into this again. As of now, it works for the most part.
 
+# Possible/Known Issues
+ Not a pure UBI since it requires online and active players.
+ No notification to user about UBI
 
 # Forking
 This repo has everything you need to throw this into IntelliJ. Like literally... Open Project then BAM
